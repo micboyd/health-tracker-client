@@ -17,8 +17,6 @@ export default function LoginForm() {
 				body: JSON.stringify({ email, password }),
 			});
 
-			const data = await response.json();
-
 			if (response.ok) {
 				setMessage('Login successful');
 			} else {
